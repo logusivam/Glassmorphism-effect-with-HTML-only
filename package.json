@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@master/normal.css": "^3.1.0",
+    "@master/styles": "^1.14.0"
+  }
+}
