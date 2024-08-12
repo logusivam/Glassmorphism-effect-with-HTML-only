@@ -3,70 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glass with HTML</title>
-    <script>
-        import '@master/styles';
-        import '@master/normal.css.'
-    </script>
+    <style>
+        .abs {
+            position: absolute;
+        }
+        .block {
+            display: block;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .h-full {
+            height: 100%;
+        }
+        .left-0 {
+            left: 0;
+        }
+        .top-0 {
+            top: 0;
+        }
+        .object-cover {
+            object-fit: cover;
+        }
+        .pointer-events-none {
+            pointer-events: none;
+        }
+        .bg-radial-gradient {
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+        .inset-0 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .h-fit {
+            height: fit-content;
+        }
+        .m-auto {
+            margin: auto;
+        }
+        .font-white {
+            color: white;
+        }
+        .rel {
+            position: relative;
+        }
+        .max-width-600 {
+            max-width: 600px;
+        }
+        .d-flex {
+            display: flex;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .gap-10 {
+            gap: 10px;
+        }
+        .p-50 {
+            padding: 50px;
+        }
+        .bg-black-03 {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .b-1-solid-white-01 {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .px-12 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        .r-10 {
+            border-radius: 10px;
+        }
+        .bd-blur-30 {
+            backdrop-filter: blur(30px);
+        }
+        .bg-white-015-active,
+        .bg-white-015:hover:not(.active) {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        .ls-1 {
+            letter-spacing: 1px;
+        }
+        .p-15 {
+            padding: 15px;
+        }
+        .font-14 {
+            font-size: 14px;
+        }
+        .font-semibold {
+            font-weight: 600;
+        }
+        .font-gray-40 {
+            color: rgba(64, 64, 64, 0.4);
+        }
+        .font-white-active-hover {
+            color: white;
+        }
+        .aspect-1-1 {
+            aspect-ratio: 1/1;
+        }
+        .w-150 {
+            width: 150px;
+        }
+        .r-5 {
+            border-radius: 5px;
+        }
+        .font-bold {
+            font-weight: bold;
+        }
+        .mt-8 {
+            margin-top: 8px;
+        }
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+        .text-24 {
+            font-size: 24px;
+        }
+        .text-14 {
+            font-size: 14px;
+        }
+        .text-12 {
+            font-size: 12px;
+        }
+        .ls-2 {
+            letter-spacing: 2px;
+        }
+        .p-10 {
+            padding: 10px;
+        }
+        .inline-block {
+            display: inline-block;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-underline {
+            text-decoration: underline;
+        }
+    </style>
+    <title>Sample Page</title>
 </head>
 <body>
-    <img class="abs block w:full h:full left:0 top:0 object:cover pointer-events:none" src="https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-    <div class="abs block w:full h:full left:0 top:0 bg:radial-gradient(circle,rgba(0,0,0,.6)0%,rgba(0,0,0,0)100%)"></div>
-    <div class="abs inset:0 h:fit m:auto font:white rel max-width:600 d:flex flex:col gap:10 p:50">
+    <img class="abs block w-full h-full left-0 top-0 object-cover pointer-events-none" src="https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+    <div class="abs block w-full h-full left-0 top-0 bg-radial-gradient"></div>
+    <div class="abs inset-0 h-fit m-auto font-white rel max-width-600 d-flex flex-col gap-10 p-50">
         <!-- tabs -->
-            <nav class="d:flex px:12 r:10 bd:blur(30) b:1;solid;white/.1 bg:black/.3 blend:hard-light">
-                <a class="
-                                bg:white/.15.active bg:white/.15:hover:not(.active) ls:1
-                                p:15 font:14 font:semibold
-                                font:gray-40 font:white:is(.active,:hover)
-                                active
-                        ">
-                        Home
-                </a>
-                <a class="
-                                bg:white/.15.active bg:white/.15:hover:not(.active) ls:1
-                                p:15 font:14 font:semibold
-                                font:gray-40 font:white:is(.active,:hover)
-                        ">
-                        Blog
-                </a>
-                <a class="
-                                        bg:white/.15.active bg:white/.15:hover:not(.active) ls:1
-                                        p:15 font:14 font:semibold
-                                        font:gray-40 font:white:is(.active,:hover)
-                                ">
-                                Album
-                </a>
-            </nav>
-
-            <!-- card	-->
-            <div class="d:flex bg:black/.3 b:1;solid;white/.1 p:10 r:10 bd:blur(30)">
-                <div class="p:15">
-                    <div class="text:24 font:bold">LS</div>
-                    <div class="text:14 font:gray-20 lines:3 mt:8 mb:10">
-                        Sushi isa traditional fighter with almost experience of 100+ victories in the international wars between many countries in the world.
-                    </div> 
-                    <div class="text:12 ls:1 mt:auto">🇯🇵 Japanese</div>
+        <nav class="d-flex px-12 r-10 bd-blur-30 b-1-solid-white-01 bg-black-03">
+            <a class="bg-white-015-active ls-1 p-15 font-14 font-semibold font-gray-40 font-white-active-hover active">
+                Home
+            </a>
+            <a class="bg-white-015-active ls-1 p-15 font-14 font-semibold font-gray-40 font-white-active-hover">
+                Blog
+            </a>
+            <a class="bg-white-015-active ls-1 p-15 font-14 font-semibold font-gray-40 font-white-active-hover">
+                Album
+            </a>
+        </nav>
+        <!-- card -->
+        <div class="d-flex bg-black-03 b-1-solid-white-01 p-10 r-10 bd-blur-30">
+            <div class="p-15">
+                <div class="text-24 font-bold">LS</div>
+                <div class="text-14 font-gray-20 lines-3 mt-8 mb-10">
+                    Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, such as seafood, often raw, and vegetables.
                 </div>
-
-                <img class="aspect:1/1 w:150 r:5 object:cover"
-                                 src="https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="text-12 ls-1 mt-auto">🇯🇵 Japanese</div>
             </div>
-
-            <!-- button -->
-            <button class="
-                            bg:black/.3 bg:black/.15:hover ls:2
-                            p:15 b:1;solid;white/.1 r:10 
-                            inline-block font:semibold bd:blur(30)
-                            font:14
-                    ">
-                    EXPLORE
-            </button>
-
-            <p class="font:12 text:center">
-                powered by <a href="https://styles.master.co" class="text:underline" target="blank">Master Styles</a>
-            </p>
-            
+            <img class="aspect-1-1 w-150 r-5 object-cover" src="https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div>
+        <!-- button -->
+        <button class="bg-black-03 ls-2 p-15 b-1-solid-white-01 r-10 inline-block font-semibold font-14">
+            EXPLORE
+        </button>
+        <p class="font-12 text-center">
+            powered by <a href="" class="text-underline" target="_blank">Master Styles</a>
+        </p>
     </div>
 </body>
 </html>
